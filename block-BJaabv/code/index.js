@@ -8,8 +8,8 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(ageOfPuppy) {
+    asd
 }
 
 /*
@@ -20,7 +20,7 @@ function calculateDogAge() {
 */
 
 function calculateMoviesToWatch() {
-  // Your code goes here
+    // Your code goes here
 }
 
 /*
@@ -30,7 +30,7 @@ function calculateMoviesToWatch() {
 */
 
 function celsiusToFahrenheit() {
-  // Your code goes here
+    // Your code goes here
 }
 
 /*
@@ -40,7 +40,7 @@ function celsiusToFahrenheit() {
 */
 
 function celsiusToFahrenheit() {
-  // Your code goes here
+    // Your code goes here
 }
 
 /*
@@ -52,7 +52,7 @@ function celsiusToFahrenheit() {
 */
 
 function pow() {
-  // Your code goes here
+    // Your code goes here
 }
 
 // Test
@@ -67,7 +67,7 @@ and return sum or product of 1,…,n. If user enters any other value than `sum` 
 */
 
 function sumOrProductOfN() {
-  // Your code goes here
+    // Your code goes here
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -79,7 +79,7 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 */
 
 function sumOfN() {
-  // Your code goes here
+    // Your code goes here
 }
 
 /*
@@ -93,7 +93,7 @@ function sumOfN() {
 */
 
 function min() {
-  // Your code goes here
+    // Your code goes here
 }
 
 min(0, 10);
@@ -104,5 +104,5 @@ min(0, -10);
 */
 
 function typeCheck() {
-  // Your code goes here
+    // Your code goes here
 }
