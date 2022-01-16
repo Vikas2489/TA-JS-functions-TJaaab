@@ -11,10 +11,14 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(minutes) {
+    let seconds = 60;
+    return minutes * seconds;
 }
+
 // - Execute the function with required parameter
+
+minToSec(12);
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -26,13 +30,23 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+
+function isInRange(upper, lower, number) {
+    if (number >= upper && number <= lower) {
+        return true;
+    } else if (number <= upper && number >= lower) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+
 // - Execute the function with required parameter
 
-/* 2. calculateBMI
+isInRange(1, 20, 9);
 
+/* 2. calculateBMI
 
 Take two arguments weight and height and return `Underweight`, `Normal` etc based on data.
 
@@ -49,9 +63,28 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(weight, height) {
+    let calculateBMII = weight / (height * height);
+    switch (true) {
+        case (`${calculateBMI} < 18.5`):
+            return 'Underweight';
+            break;
+        case (`${calculateBMI} >= 18.5 || ${calculateBMI} <= 24.9`):
+            return 'Normal weight';
+            break;
+        case (`${calculateBMI} >= 25 || ${calculateBMI} <= 29.9`):
+            return 'Over weight';
+            break;
+        case (`${calculateBMI} >= 30`):
+            return 'Obese';
+            break;
+        default:
+            return "Invalid value!";
+            break;
+    }
 }
+
+calculateBMI(73, 185);
 
 /* 3. appropiateDrinks
 
@@ -64,9 +97,19 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+    if (age < 14) {
+        return "drink fruit juice";
+    } else if (age < 18) {
+        return "drink soda";
+    } else if (age < 21) {
+        return "drink fruit-flavored beer";
+    } else if (age >= 21) {
+        return "drink throat-piercing vodka";
+    }
 }
+
+appropiateDrinks(12);
 
 /* 4. Add two numers or string
 
@@ -79,13 +122,32 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(valueA, valueB) {
+    if (valueA === Number && valueB === Number) {
+        return valueA + valueB;
+    } else if (valueA === String && valueB === String) {
+        return valueA + "" + valueB;
+    } else {
+        alert("Enter valid values");
+    }
 }
 
-// Function Test
-sum(2, 4); // 4
-sum('Arya', 'Stark'); // "Arya Stark"
-sum('Arya', 2); // Enter valid Values
-sum(null, 2); // Enter valid Values
-sum(undefined, 2); // Enter valid Values
+
+
+function sum(valueA, valueB) {
+    if (valueA === Number || valueB === Number) {
+        return (`${valueA} + ${valueB}`);
+    } else if (valueA === String || valueB === String) {
+        return (`${valueA} + "" + ${valueB}`);
+    } else {
+        alert("Enter valid values");
+    }
+
+
+
+    // Function Test
+    sum(2, 4); // 4
+    sum('Arya', 'Stark'); // "Arya Stark"
+    sum('Arya', 2); // Enter valid Values
+    sum(null, 2); // Enter valid Values
+    sum(undefined, 2); // Enter valid Values
